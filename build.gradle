@@ -1,0 +1,26 @@
+plugins {
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+    id 'java'
+    id 'application'
+    id 'java-library'
+}
+
+group = 'org.main'
+version = '1.0-SNAPSHOT'
+mainClassName = 'org.main.Main'
+repositories {
+    mavenCentral()
+}
+javafx {
+    version = '21.0.1'
+    modules = ['javafx.controls', 'javafx.fxml','javafx.graphics']
+}
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation project(":backend")
+}
+
+test {
+    useJUnitPlatform()
+}
