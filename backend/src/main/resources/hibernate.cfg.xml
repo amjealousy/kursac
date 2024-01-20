@@ -1,22 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE hibernate-configuration PUBLIC
+        <!DOCTYPE hibernate-configuration PUBLIC
     "-//Hibernate/Hibernate Configuration DTD//EN"
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
     <!-- Database connection settings -->
-    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bank?serverTimezone=UTC</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/bank</property>
     <property name="hibernate.connection.username">test_user</property>
     <property name="hibernate.connection.password">password</property>
 
     <!-- SQL dialect -->
-    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 
     <!-- Validate the database schema on startup -->
     <property name="hbm2ddl.auto">update</property>
 
     <!-- Names the annotated entity class -->
     <mapping class="org.main.entity.Credential"/>
+    <mapping class="org.main.entity.Client"/>
+    <mapping class="org.main.entity.Account"/>
+    <mapping class="org.main.entity.Card"/>
+    <mapping class="org.main.entity.Credit"/>
+    <mapping class="org.main.entity.TypeCredit"/>
+
   </session-factory>
 </hibernate-configuration>

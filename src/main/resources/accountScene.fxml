@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<!--        fx:controller="org.main.controller.AccountController"-->
+
+<AnchorPane prefHeight="500.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <TableView fx:id="account_table" prefHeight="292.0" prefWidth="594.0">
+        <columns>
+            <TableColumn fx:id="number_column" prefWidth="132.0" text="Номер счёта" />
+          <TableColumn fx:id="type_column" prefWidth="75.0" text="Тип счёта" />
+          <TableColumn fx:id="currencies_column" prefWidth="147.0" text="Валюты" />
+            <TableColumn fx:id="client_column" prefWidth="132.0" text="Клиент" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem fx:id="edit" mnemonicParsing="false" onAction="#editContext" text="Изменить" />
+                  <MenuItem fx:id="delete" mnemonicParsing="false"  onAction="#deleteContext" text="Удалить" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <HBox prefHeight="37.0" prefWidth="257.0">
+         <children>
+            <Label contentDisplay="CENTER" fx:id="number_label" prefHeight="29.0" prefWidth="91.0" text="Номер счёта" textAlignment="CENTER">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="number_text">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="257.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="29.0" prefWidth="91.0" text="Тип счёта" textAlignment="CENTER">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="type_text">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="20.0" prefHeight="37.0" prefWidth="257.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="29.0" prefWidth="91.0" text="Валюты" textAlignment="CENTER">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="currencies_text">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="30.0" prefHeight="37.0" prefWidth="257.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="29.0" prefWidth="91.0" text="Счета клиентов" textAlignment="CENTER">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="client_text">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button fx:id="save_button" layoutX="100.0" mnemonicParsing="false" onAction="#onSave" text="Сохранить">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

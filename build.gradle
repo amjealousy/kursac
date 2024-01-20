@@ -19,6 +19,11 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation project(":backend")
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+    implementation 'org.hibernate.validator:hibernate-validator-annotation-processor:8.0.1.Final'
+    implementation 'org.glassfish:jakarta.el:4.0.2'
+
 }
 
 test {
