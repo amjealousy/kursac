@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/backend/src/main/java/org/main/dao/CredentialDAO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/java/org/main/entity/Account.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/java/org/main/entity/Card.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/java/org/main/entity/Credential.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/java/org/main/entity/Credit.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/java/org/main/entity/TypeAccount.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/java/org/main/entity/TypeCredit.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/java/org/main/utils/Generator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/src/main/java/validation/ValidationUtilsBackend.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/main/FxmlMapping.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/main/controller/MainSceneController.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
